@@ -1,0 +1,45 @@
+<html>
+<script type="text/javascript">
+         <!--
+            function Results() {
+   		  var var1 = document.getElementById("No1").value;
+		  var var2 = document.getElementById("No2").value;
+		  var var3 = document.getElementById						  ("operator").value;
+		  var result;
+		  switch(var3)
+		  {
+			case '+' : result = +var1 + +var2;
+					break;
+			case '-' : result = +var1 - +var2;
+					break;
+			case '/' : result = +var1 / +var2;
+					break;
+			case '*' : result = +var1 * +var2;
+					break;
+		  }
+	   document.write(var1," ",var3," ",var2," = ",result);
+            }
+         //-->
+      </script>
+   <body>
+	   Number 1:
+	   <br>
+	   <input type="text" id="No1" />
+      </form>
+	   <br>
+	   Number 2:
+	   <br>
+	   <input type="text" id="No2" />
+      </form>
+	   <br>
+        Operator:
+	   <br>
+	   <input type="text" id="operator" />
+      </form>
+	</form>
+	   <br>
+        <br>
+	   <input type="button" id="res" value="Result" onclick="Results();" />
+      </form>
+   </body>
+</html>
